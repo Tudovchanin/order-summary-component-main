@@ -1,0 +1,139 @@
+:root {
+	--Pale-blue: hsl(225, 100%, 94%);
+	--Bright-blue: hsl(245, 75%, 52%);
+	--Very-pale-blue: hsl(225, 100%, 98%);
+	--Desaturated-blue: hsl(224, 23%, 55%);
+	--Dark-blue: hsl(223, 47%, 23%);
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+	align-self: flex-end;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+body {
+	display: grid;
+	height: 100vh;
+	justify-items: center;
+	align-items: center;
+	background: url("images/pattern-background-desktop.svg");
+}
+
+.card {
+	width: 350px;
+	overflow: hidden;
+	font-family: "Red Hat Display", sans-serif;
+	border-radius: 20px;
+	background-color: var(--Very-pale-blue);
+	padding-bottom: 1em;
+}
+.card__img img {
+	max-width: 100%;
+	margin-bottom: 20px;
+}
+
+.title {
+	color: var(--Dark-blue);
+	margin-bottom: 20px;
+	text-align: center;
+	font-weight: 900;
+	font-size: 24px;
+}
+.title-text {
+	font-weight: 500;
+	margin-bottom: 20px;
+	text-align: center;
+	color: var(--Desaturated-blue);
+	line-height: 1.5em;
+}
+
+.tariff {
+	position: relative;
+	display: flex;
+	margin-bottom: 20px;
+	margin-right: 30px;
+	margin-left: 30px;
+	align-items: center;
+}
+.tariff__info {
+	margin-left: 20px;
+}
+
+.tariff__name {
+	font-weight: 700;
+	color: var(--Dark-blue);
+}
+.tariff__price {
+	color: var(--Desaturated-blue);
+}
+
+.tariff__change {
+	text-decoration: underline;
+	border: none;
+	cursor: pointer;
+	font-weight: 700;
+	color: var(--Bright-blue);
+	position: absolute;
+	right: 0;
+}
+.tariff__change:hover {
+	color: blueviolet;
+	text-decoration: none;
+}
+.consent-to-payment {
+	display: grid;
+	padding: 0 30px;
+}
+.consent-to-payment__yes {
+	color: var(--Very-pale-blue);
+	padding: 15px 0;
+	border: none;
+	background-color: var(--Bright-blue);
+	border-radius: 10px;
+	cursor: pointer;
+}
+.consent-to-payment__yes:hover {
+	background-color: var(--Bright-blue);
+	opacity: 0.7;
+}
+.consent-to-payment__cancel {
+	font-weight: 700;
+	color: var(--Desaturated-blue);
+	padding: 15px 0;
+	border: none;
+	background-color: var(---Very-pale-blue);
+	cursor: pointer;
+}
+.consent-to-payment__cancel:hover {
+	color: var(--Dark-blue);
+}
+
+@media (max-width: 720px) {
+	body {
+		display: grid;
+		align-items: center;
+		justify-items: center;
+		background-image: url("/images/pattern-background-mobile.svg");
+	}
+}
+
+@media (max-width: 365px) {
+	* {
+		font-size: 14px;
+	}
+	.card {
+		width: 99%;
+	}
+	.title-text {
+		padding: 0 12px;
+	}
+}
