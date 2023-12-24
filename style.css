@@ -124,7 +124,9 @@ body {
 		display: grid;
 		align-items: center;
 		justify-items: center;
-		background: url("images/pattern-background-mobile.svg");
+		background: url("order-summary-component-main/images
+/pattern-background-mobile.svg
+");
 	}
 }
 
