@@ -25,9 +25,7 @@ body {
 	height: 100vh;
 	justify-items: center;
 	align-items: center;
-	background: url("order-summary-component-main/images
-/pattern-background-desktop.svg
-");
+	background: url("images/pattern-background-desktop.svg");
 }
 
 .card {
